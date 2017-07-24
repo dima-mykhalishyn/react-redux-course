@@ -1,4 +1,5 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 
 const VideoDetail = ({video}) => {
   if(!video) {
@@ -19,6 +20,10 @@ const VideoDetail = ({video}) => {
       </div>
     </div>
   )
+}
+
+VideoDetail.propTypes = {
+  video: PropTypes.object.isRequired
 }
 
 export default VideoDetail
