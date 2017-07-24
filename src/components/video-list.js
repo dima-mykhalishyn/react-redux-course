@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import PropTypes from 'prop-types'
 import VideoListItem from './video-list-item'
 
 class VideoList extends Component {
@@ -19,6 +20,10 @@ class VideoList extends Component {
       </ul>
     )
   }
+}
+
+VideoListItem.propTypes = {
+  videos: PropTypes.array.isRequired
 }
 
 export default VideoList
